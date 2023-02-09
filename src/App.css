@@ -1,0 +1,56 @@
+:root {
+  --primary-color: linear-gradient(white, skyblue, rgb(80, 80, 255));
+  --second-color: rgba(250, 250, 250, 0.7);
+  --primary-letter: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body, .App, .numberCharacters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--primary-color);
+  font-family: var(--primary-letter);
+}
+
+.App {
+  transition: all 0.2s;
+  width: 16em;
+  height: 17em;
+  border: 3px solid transparent;
+  padding: 2.2em 1em;
+  letter-spacing: 0.4em;
+  flex-direction: column;
+}
+
+.App:hover {
+  border: 3px solid black;
+  border-radius: 20px;
+  background: var(--second-color);
+}
+
+h1, div, button {
+  margin: 10px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.numberCharacters {
+  letter-spacing: 0.1em;
+}
+
+.numberCharacters button {
+  width: 3em;
+}
